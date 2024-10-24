@@ -10,14 +10,17 @@ namespace EvenNumbers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Even Numbers from 1 to 100:");
 
             int number = 2;
+            Console.WriteLine("Even Numbers from 1 to 100:");
 
             while (number <= 100)
             {
-                Console.WriteLine(number);
-                number += 2;
+                if (number % 2 == 0)
+                {
+                    Console.WriteLine(number);
+                }
+                number ++;
             }
 
             Console.ReadKey();
